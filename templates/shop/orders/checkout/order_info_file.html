@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Detail</title>
+    <style>
+        td {
+            padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 2.5rem; text-align: center; margin-top: 1rem; margin-bottom: 0.7rem;">Order Detail</h1>
+
+    <table style="width: 100%; border: 1px solid #BDBDBD; padding-left: 6vw; padding-right: 6vw; margin-left: auto; margin-right: auto;">
+        <tbody>
+            <tr>
+                <td style="font-weight: 600;">Name</td>
+                <td>{{ order.first_name }} {{ order.last_name }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Email</td>
+                <td>{{ order.email }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Phone Number</td>
+                <td>{{ order.phone }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Address</td>
+                <td>{{ order.address }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">City</td>
+                <td>{{ order.city }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">State</td>
+                <td>{{ order.state }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Country</td>
+                <td>{{ order.country }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Order Note</td>
+                <td>{{ order.order_note }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Order Number</td>
+                <td>{{ order.order_number }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Vat</td>
+                <td>{{ order.tax }}</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 600;">Order total</td>
+                <td>{{ order.order_total }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
